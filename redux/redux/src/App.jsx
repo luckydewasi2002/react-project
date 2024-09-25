@@ -7,6 +7,7 @@ import { increment,decrement,multiple } from './slice/Counterslice'
 import Header from './comonents/Header'
 import { incrementCart,decrementCart,multipleCart } from './slice/CartSlice'
 import Footer from './comonents/Footer'
+import Fetch from './comonents/Fetch'
 
 function App() {
   const count = useSelector(state => state.counter.value)
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div>
+    <Fetch/>
     <Header/> 
       <div>
         <button
